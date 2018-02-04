@@ -1,0 +1,11 @@
+Instructions for Visual Studio 2017
+
+1. File -> New Project -> Visual C++ -> CLR -> CLR Empty Project, set name
+  * If you don't have this, you'll need to install the proper components in the VS installer
+2. Right-click project name in solution explorer -> Add -> New item -> Visual C++ -> UI -> Windows Form, choose name, ignore subsequent error
+3. Right-click project name in solution explorer -> Properties
+4. In Configuration, select All Configurations
+5. Project -> Properties -> Configuration Properties -> Linker -> Input -> Additional Dependencies -> user32.lib
+6. Project -> Properties -> Configuration Properties -> Linker -> System -> SubSystem -> Windows (/SUBSYSTEM:WINDOWS)
+7. Project -> Properties -> Configuration Properties -> Linker -> Advanced -> Entry Point -> main
+
